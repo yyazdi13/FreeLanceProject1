@@ -1,0 +1,1 @@
+INSERT INTO emails (email, message) VALUES ('abc@123.com','hello');
