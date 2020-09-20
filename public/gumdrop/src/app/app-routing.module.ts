@@ -4,6 +4,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { MenuComponent } from './menu/menu.component';
 import {MenuDetailsComponent} from './menu-details/menu-details.component';
 import { ContactComponent } from './contact/contact.component';
+import { ContactService } from './contact/contact.service';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -15,6 +16,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [ContactService]
 })
 export class AppRoutingModule { }

@@ -1,1 +1,7 @@
 <p>contact works!</p>
+<table>
+<tr *ngFor="let msg of contacts">
+    <td>{{msg.email}}</td>
+    <td>{{msg.message}}</td>
+</tr>
+</table>
