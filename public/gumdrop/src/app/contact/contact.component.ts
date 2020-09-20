@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { ContactService} from './contact.service';
 import { Contact } from './contact';
 
@@ -6,11 +6,13 @@ import { Contact } from './contact';
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css'],
-  providers: [ContactService]
+  providers: [ContactService],
+  template: 
+  `email: <input type="text" [(ngModel)]="email">`
 })
 export class ContactComponent implements OnInit {
   contacts: Object;
-  contact: Contact[];
+  contact: Contact [] = [];
   email: string;
   message: string;
 
@@ -29,5 +31,22 @@ export class ContactComponent implements OnInit {
       }
     )
   }
+
+  onSubmit({email, message}): void{
+    this._ContactService.postMessage(email, message)
+    .subscribe(contact=>{
+      this.contact.push(contact);
+    })
+  }
+  // {
+  //   const newContact = {
+  //     email: this.email,
+  //     message: this.message
+  //   }
+  //   this._ContactService.postMessage(newContact)
+  //   .subscribe(contact => {
+  //     this.contact.push(contact)
+  //   })
+  // }
 
 }

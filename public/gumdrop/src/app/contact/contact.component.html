@@ -5,3 +5,9 @@
     <td>{{msg.message}}</td>
 </tr>
 </table>
+<br>
+<form (ngSubmit)="onSubmit({email: email, message: message})">
+<input type="text" [(ngModel)] = "email" name="email" />
+<input type="text" [(ngModel)] = "message" name="message" />
+<button onclick="postMessage" type="submit">Submit</button>
+</form>
