@@ -23,4 +23,14 @@ router.post('/post', (req,res)=>{
     })
 })
 
+// get all flavors
+router.get('/flavors', (req,res)=>{
+    db.Flavor.findAll({}).then(function(results){
+      res.json(results);
+    }).catch(err =>{
+        res.status(500).json('error ' + err);
+    })
+});
+
+
 module.exports = router;
