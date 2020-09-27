@@ -1,7 +1,14 @@
-<p>{{flavors[1].name}}</p>
-<img src='{{"../../../../assets/images/" +flavors[3].image+ ".jpg"}}'/>
-<table>
-    <tr>
-
-    </tr>
-    </table>
+<app-menu>
+<ng-template #content>
+    <div class="row">
+    <div class="card" style="width: 14rem;" *ngFor= "let flavor of flavors">
+        <img class="card-img-top" style="height: 190px;" src='{{"../../../../assets/images/" +flavor.image+ ".jpg"}}' alt="Card image cap">
+        <div class="card-body">
+          <strong><h5 class="card-title">{{flavor.name}}</h5></strong>
+          <strong><p class="card-text" style="font-size: small;">{{flavor.description}}</p></strong>
+        </div>
+    </div>
+    </div>
+    
+</ng-template>
+</app-menu>

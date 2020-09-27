@@ -1,0 +1,15 @@
+.card{
+    background-image: url('../../assets/images/sprinklesBackground.jpg');
+    margin: 60px;
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.541);
+}
+.card-body{
+    height: 150px;
+}
+.card-title{
+    margin-bottom: 5px;
+    text-align: center;
+}

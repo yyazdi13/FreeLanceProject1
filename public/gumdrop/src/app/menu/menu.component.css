@@ -1,0 +1,35 @@
+nav{
+    background-image: url('../../assets/images/fruitsBackground.jpg');
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+#header{
+    font-size: 45pt;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    border-radius: 5px; 
+    width: 300px;
+    text-align: center;
+    background-color: rgba(255, 167, 211, 0.5);
+    border: 3px dotted rgba(255, 23, 197, 0.637);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.425);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 103, 129, 0.993);
+}
+
+#container{
+    background-image: url('../../assets/images/fruitsBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 530px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    margin: 20px;
+    margin-top: 20px;
+    overflow-y: scroll;
+    clear: both;
+}
+
