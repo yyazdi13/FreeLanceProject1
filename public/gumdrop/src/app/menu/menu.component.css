@@ -1,20 +1,20 @@
 nav{
-    background-image: url('../../assets/images/fruitsBackground.jpg');
-    display: flex;
-    justify-content: center;
+    background-color: rgba(219, 3, 86, 0.726);
     margin: 20px;
+    width: inherit;
 }
 #header{
-    font-size: 45pt;
+    font-size: 39pt;
     text-shadow: 2px 2px 2px black;
     color: white;
     border-radius: 5px; 
-    width: 300px;
+    width: fit-content;
     text-align: center;
-    background-color: rgba(255, 167, 211, 0.5);
-    border: 3px dotted rgba(255, 23, 197, 0.637);
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.425);
-    -webkit-text-stroke-width: 1px;
+    background-color: rgba(16, 111, 173, 0.616);
+    /* background-image: url('../../assets/images/sprinklesBackground.jpg'); */
+    border: 4px dotted rgba(255, 103, 129);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.425);
+    -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: rgba(255, 103, 129, 0.993);
 }
 
@@ -22,6 +22,7 @@ nav{
     background-image: url('../../assets/images/fruitsBackground.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    border: 1px solid rgba(0, 0, 0, 0.644);
     height: 530px;
     display: flex;
     justify-content: center;
@@ -31,5 +32,25 @@ nav{
     margin-top: 20px;
     overflow-y: scroll;
     clear: both;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.664);
 }
 
+.btn{
+    border: 1px solid  rgba(16, 111, 173, 0.616);
+    color: white;
+}
+
+.navigation{
+    margin-bottom: 10px;
+}
+
+.center{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    justify-self: center;
+    align-content: center;
+    justify-items: center;
+}

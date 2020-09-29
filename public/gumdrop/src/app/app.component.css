@@ -1,6 +1,7 @@
 .footer{
-    background-image: url('../assets/images/fruitsBackground.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-
+    background-color: rgba(219, 3, 86, 0.726);
+}
+.details{
+    font-family: "Belleza";
+    color: rgba(16, 111, 173);
 }

@@ -1,13 +1,39 @@
-<p>contact works!</p>
-<table>
-<tr *ngFor="let msg of contacts">
-    <td>{{msg.email}}</td>
-    <td>{{msg.message}}</td>
-</tr>
-</table>
-<br>
-<form (ngSubmit)="onSubmit({email: email, message: message})">
-<input type="text" [(ngModel)] = "email" name="email" />
-<input type="text" [(ngModel)] = "message" name="message" />
-<button onclick="postMessage" type="submit">Submit</button>
-</form>
+<app-menu>
+    <ng-template #content>
+        <div class="row container">
+            <div class="row">
+                <div class="col">
+        <h3 class="heading">Questions? Suggestions? Send us a message and we'll get back to you!</h3>
+                </div>
+            </div>
+            <div *ngIf="hidden" class="row container alert">
+                <div>
+                <h5>Message Recieved!</h5>
+                </div>
+            </div>
+        
+        <div class="row form-container form-group">
+        <form class="form" (ngSubmit)="onSubmit({email: email, message: message})">
+            <div class="col">
+                <h4 class="label">Email:</h4>
+            </div>
+            <div class="col">
+            <input class="form-control" type="text" [(ngModel)] = "email" name="email" />
+            </div>
+            <br>
+            <div class="col">
+                <h4 class="label">Message:</h4>
+            </div>
+            <div class="col">
+            <input class="form-control" type="text" [(ngModel)] = "message" name="message" />
+            </div>
+            <br>
+            <div class="col">
+            <button class="btn btn-primary" onclick="postMessage" type="submit">Submit</button>
+            </div>
+        </form>
+        </div> 
+        </div>
+  </ng-template>
+  </app-menu>
+

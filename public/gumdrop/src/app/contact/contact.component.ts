@@ -7,14 +7,13 @@ import { Contact } from './contact';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css'],
   providers: [ContactService],
-  template: 
-  `email: <input type="text" [(ngModel)]="email">`
 })
 export class ContactComponent implements OnInit {
   contacts: Object;
   contact: Contact [] = [];
   email: string;
   message: string;
+  hidden: boolean;
 
   properties: Array<any>
 
@@ -30,6 +29,7 @@ export class ContactComponent implements OnInit {
         console.log(data);
       }
     )
+    this.hidden = false;
   }
 
   onSubmit({email, message}): void{
@@ -37,6 +37,7 @@ export class ContactComponent implements OnInit {
     .subscribe(contact=>{
       this.contact.push(contact);
     })
+    this.hidden = true;
   }
   // {
   //   const newContact = {

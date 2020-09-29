@@ -8,7 +8,7 @@ import { catchError, retry } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class ContactService {
-
+  hidden = false;
   constructor(private http: HttpClient) { }
 
   getMessage():Observable<any>
@@ -20,6 +20,7 @@ export class ContactService {
   {
     var headers = new HttpHeaders();
     headers.append('Content-Type', 'application/json')
+    this.hidden = true;
     return this.http.post<Contact>('http://localhost:3000/api/post', {email, message}, {headers: headers})
   
   }

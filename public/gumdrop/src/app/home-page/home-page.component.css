@@ -1,11 +1,37 @@
 
 .media{
     background-color: rgba(255, 217, 217, 0.856);
-    margin-top: 0;
     height: 150px;
-    width: 750px;
+    width: 75%;
+    padding: 20px;
+    display: flex;
+    align-self: start;
+    margin-top: 40px;
+    border: 3px solid rgb(255, 0, 119);
+    font-family: 'Belleza';
+    font-size: 14pt;
+    text-align: center;
+    overflow-y: scroll;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.507);
 }
 
 #mediaTitle{
     text-align: center;
+    text-emphasis: bolder;
+}
+
+.list{
+    text-align: left;
+}
+
+.flavors{
+    width: 500px;
+    height: 250px;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .flavors{
+        width: inherit;
+    }
 }
