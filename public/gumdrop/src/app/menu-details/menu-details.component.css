@@ -1,5 +1,7 @@
 .card{
     background-image: url('../../assets/images/sprinklesBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 60px;
     margin-left: 150px;
     margin-top: 50px;
@@ -8,8 +10,19 @@
 }
 .card-body{
     height: 150px;
+    overflow-y: scroll;
 }
 .card-title{
     margin-bottom: 5px;
+    text-align: center;
+}
+.heading{
+    font-family: "Belleza";
+    color: rgba(16, 111, 173);
+    font-weight: bolder;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.356);
+    background-color: rgba(245, 215, 233, 0.541);
+    margin-top: 20px;
+    width: 400px;
     text-align: center;
 }
