@@ -5,3 +5,7 @@
     font-family: "Belleza";
     color: rgba(16, 111, 173);
 }
+
+html,body{
+    scroll-behavior: smooth;
+}

@@ -1,13 +1,27 @@
 <app-menu>
   <ng-template #content>
-<div class="media">
+    <div class="links child">
+      <button class="btn btn-danger" (click)="scrollToElement(target)">About</button>
+      <br>
+      <button class="btn btn-danger" (click)="scrollToElement(skills)">Skills</button>
+    </div>
+        <div class="image">
+          <img class="" src="../../assets/images/IMG_E1304.JPG">
+        </div>
+<div class="media about child" id="section1" #target>
         <div class="media-body">
-          <strong><h4 id="mediaTitle" class="mt-0">About GumDrop</h4></strong>
-          <p>GumDrop is a frozen yogurt food truck located in Austin, TX. With a variety of flavors, toppings, and specials,
-            it's our goal to help locals beat the heat with a cool frozen treat!</p>
+          <strong><h4 id="mediaTitle" class="mt-0">About Me</h4></strong>
+          <p class="description"> I recently graduated with my Bachelor's from SUNY Albany, where I majored in psychology and minored in business.
+            I've volunteered in 3 different psychology research labs and that's where I first got 
+            exposed to a programming language (Python). I moved to Austin about a year ago to seek new opportunities and steady my 
+            career path. Sure enough, I came across The Coding Bootcamp at UT, where I've been pushing my capabilities and learning 
+            to code from a full stack prespective. Since starting, I've learned how to follow a MVC model, create a RESTful API, 
+            create an object oriented program, collaborate on GitHub, run browser tests, picked up many new languages and libraries 
+            such as React.js, and much more. I've become passionate about making creative web applications and solving complex problems with 
+            elegant yet easily maintainable code.</p>
         </div>
 </div>
-<div class="row">
+<div class="row child" id="section2" #skills>
 <div class="media col m-4 flavors">
   <div class="media-body">
     <strong><h4 id="mediaTitle" class="mt-0">Flavors:</h4></strong>

@@ -13,6 +13,32 @@
     text-align: center;
     overflow-y: scroll;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.507);
+    scroll-behavior: smooth;
+}
+.image{
+    border: 2px solid rgb(104, 13, 55);
+    margin-bottom: 100px;
+    box-shadow: 2px 1px 1px 2px rgba(0, 0, 0, 0.521);
+    width: 100%;
+    scroll-snap-align: center;
+}
+img{
+    height: 100%;
+    width: inherit;
+
+}
+
+.about{
+    height: 300px;
+    margin-bottom: 70px;
+
+}
+.parent{
+    scroll-snap-type: mandatory;
+}
+
+.child{
+    scroll-snap-align: start;
 }
 
 #mediaTitle{
@@ -28,6 +54,24 @@
     width: 500px;
     height: 250px;
     
+}
+
+.description{
+    text-align: left;
+}
+
+.links{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url('../../assets/images/code.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn-danger{
+    width: 100px;
+    margin: 10px;
 }
 
 @media only screen and (max-width: 600px) {

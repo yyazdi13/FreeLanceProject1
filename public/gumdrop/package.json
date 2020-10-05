@@ -22,6 +22,8 @@
     "@angular/router": "~10.1.1",
     "@ng-bootstrap/ng-bootstrap": "^7.0.0",
     "bootstrap": "^4.5.0",
+    "ngx-page-scroll": "^7.0.3",
+    "ngx-page-scroll-core": "^7.0.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"

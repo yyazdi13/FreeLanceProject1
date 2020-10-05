@@ -34,6 +34,8 @@ nav{
     overflow-y: scroll;
     clear: both;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.664);
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 
 .btn{

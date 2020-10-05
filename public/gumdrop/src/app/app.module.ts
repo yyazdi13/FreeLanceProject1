@@ -10,6 +10,7 @@ import { MenuComponent } from './menu/menu.component';
 import { ContactComponent } from './contact/contact.component';
 import { MenuDetailsComponent } from './menu-details/menu-details.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    NgbModule
+    NgbModule,
+    NgxPageScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]
