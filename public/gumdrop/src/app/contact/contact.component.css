@@ -41,8 +41,8 @@
     margin-bottom: 40px;
     box-shadow: 1px 1px rgba(0, 0, 0, 0.356);
     background-color: rgba(245, 215, 233, 0.541);
-    padding: 20px
-
+    padding: 20px;
+    margin-top: 15px;
 }
 
 .alert{
@@ -51,4 +51,15 @@
     color: fuchsia;
     background-color: rgba(245, 215, 233, 0.507);
     width: 80%;
+}
+
+
+a, i{
+    margin: 30px;
+    margin-bottom: 30px;
+}
+
+.handles{
+    
+    text-align: center;
 }

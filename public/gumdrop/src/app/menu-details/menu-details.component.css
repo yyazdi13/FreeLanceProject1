@@ -27,6 +27,14 @@
     text-align: center;
 }
 
-html,body{
-    scroll-behavior: smooth;
+.child{
+    scroll-snap-align: start;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .card{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
 }

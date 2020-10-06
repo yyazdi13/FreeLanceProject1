@@ -78,4 +78,7 @@ img{
     .flavors{
         width: inherit;
     }
+    .description{
+        text-align: center;
+    }
 }
