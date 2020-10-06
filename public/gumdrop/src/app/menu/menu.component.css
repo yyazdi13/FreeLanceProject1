@@ -58,3 +58,16 @@ nav{
     align-content: center;
     justify-items: center;
 }
+
+@keyframes gif{
+    from {transform: rotateY(0deg)}
+    to {transform: rotateY(180deg)}
+}
+
+.gif{
+  animation-name: gif;
+  animation-duration: 5s;
+  transition-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  border: 1px solid deeppink;
+}

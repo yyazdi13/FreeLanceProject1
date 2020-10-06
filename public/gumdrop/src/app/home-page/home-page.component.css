@@ -74,6 +74,13 @@ img{
     margin: 10px;
 }
 
+.me{
+    width: 100px;
+    height: 160px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.658);
+    border: 1px solid rgb(45, 6, 82);
+}
+
 @media only screen and (max-width: 600px) {
     .flavors{
         width: inherit;

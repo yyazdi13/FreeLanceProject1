@@ -13,6 +13,8 @@ export class MenuDetailsComponent implements OnInit {
   name: string;
   image: string;
   description: string;
+  link: string;
+  ghLink: string;
   constructor(private MenuService: MenuDetailsService) { }
 
   ngOnInit(): void {

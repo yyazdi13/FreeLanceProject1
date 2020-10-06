@@ -1,6 +1,6 @@
 <app-menu>
 <ng-template #content>
-  <div class="row">
+  <div class="row child">
     <div class="col">
 <h1 class="heading">Portfolio</h1>
     </div>
@@ -8,6 +8,12 @@
     <div class="row">
     <div class="card child" style="width: 14rem;" *ngFor= "let flavor of flavors">
         <img class="card-img-top" style="height: 190px;" src='{{"../../../../assets/images/" +flavor.image+ ".jpg"}}' alt="Card image cap">
+        <div class="row">
+          <div class="col" style="text-align: center; margin-top: 5px;">
+        <a target="blank" href='{{flavor.link}}' style="margin-right: 2px;"><button class="btn btn-light">Project Link</button></a>
+        <a target="blank" href="{{flavor.ghLink}}"><button class="btn btn-light">GitHub Link</button></a>
+        </div>
+        </div>
         <div class="card-body">
           <strong><h5 class="card-title">{{flavor.name}}</h5></strong>
           <strong><p class="card-text" style="font-size: small;">{{flavor.description}}</p></strong>
