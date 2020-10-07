@@ -22,6 +22,11 @@ if (process.env.NODE_ENV === 'production'){
   app.use(express.static('public/gumdrop/dist/gumdrop'));
 }
 
+// static setup
+app.get("*", function (req, res) {
+  res.sendFile(path.join(__dirname, "public", "gumdrop", "dist", "gumdrop", "index.html"));
+   });
+
 db.sequelize.sync({force: false}).then(function(){
     app.listen(PORT, function() {
       console.log("App listening on PORT " + PORT);
