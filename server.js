@@ -11,7 +11,7 @@ var PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static(path.join(__dirname, 'public/gumdrop/dist/gumdrop/index.html')));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors());
 
 //Routes
@@ -19,7 +19,7 @@ app.use('/api', route);
 
 // Heroku setup
 if (process.env.NODE_ENV === 'production'){
-  app.use(express.static('public/gumdrop/dist/gumdrop/index.html'));
+  app.use(express.static('public/gumdrop/dist/gumdrop'));
 }
 
 // static setup
