@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cd public &&  cd gumdrop && ng build",
+    "build": "cd public && cd gumdrop && ng build",
     "install-client": "cd public && cd gumdrop && npm install",
     "heroku-postbuild": "npm run install-client && npm run build",
     "start": "node server.js",
