@@ -19,7 +19,7 @@ app.use('/api', route);
 
 // Heroku setup
 if (process.env.NODE_ENV === 'production'){
-  app.use(express.static('public/build'));
+  app.use(express.static('public/gumdrop/dist/gumdrop'));
 }
 
 db.sequelize.sync({force: false}).then(function(){
