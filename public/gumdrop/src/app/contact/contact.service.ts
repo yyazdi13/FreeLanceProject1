@@ -21,7 +21,7 @@ export class ContactService {
     var headers = new HttpHeaders();
     headers.append('Content-Type', 'application/json')
     this.hidden = true;
-    return this.http.post<Contact>('http://localhost:3000/api/post', {email, message}, {headers: headers})
+    return this.http.post<Contact>('/api/post', {email, message}, {headers: headers})
   
   }
 }
