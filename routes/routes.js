@@ -32,8 +32,8 @@ router.get('/flavors', (req,res)=>{
     })
 });
 
-router.get("*", function (req, res) {
-    res.sendFile(path.join(__dirname, "../public", "gumdrop", "index.html"));
+router.get("/", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public", "gumdrop", "dist", "gumdrop", "index.html"));
 });
 
 module.exports = router;
