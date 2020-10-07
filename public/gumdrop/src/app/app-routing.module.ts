@@ -8,7 +8,6 @@ import { ContactService } from './contact/contact.service';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
-  {path: '/', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: HomePageComponent},
   {path: 'menu', component: MenuDetailsComponent},
   {path: 'contact', component: ContactComponent}

@@ -24,7 +24,7 @@ if (process.env.NODE_ENV === 'production'){
 
 // static setup
 app.get("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "public", "gumdrop", "dist", "gumdrop", "index.html"));
+  res.sendFile(path.join(__dirname, "public", "gumdrop"));
    });
 
 db.sequelize.sync({force: false}).then(function(){
