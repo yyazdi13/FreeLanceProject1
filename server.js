@@ -11,7 +11,7 @@ var PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors());
 
 //Routes
@@ -23,8 +23,8 @@ if (process.env.NODE_ENV === 'production'){
 }
 
 // static setup
-app.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname, "public", "gumdrop", "src", "index.html"));
+app.get("*", function (req, res) {
+  res.sendFile(path.join(__dirname, "public", "gumdrop", "dist", "gumdrop", "index.html"));
 });
 
 db.sequelize.sync({force: false}).then(function(){
