@@ -5,7 +5,7 @@ const path = require('path');
 const route = require('./routes/routes');
 
 var app = express();
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(express.urlencoded({ extended: true }));
@@ -16,6 +16,11 @@ app.use(cors());
 
 //Routes
 app.use('/api', route);
+
+// Heroku setup
+if (process.env.NODE_ENV === 'production'){
+  app.use(express.static('public/build'));
+}
 
 db.sequelize.sync({force: false}).then(function(){
     app.listen(PORT, function() {

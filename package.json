@@ -4,10 +4,14 @@
   "description": "",
   "main": "server.js",
   "engine": {
-    "node": "10.16.3"
+    "node": "10.16.3",
+    "npm" : "6.9.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd public &&  cd gumdrop && ng build",
+    "install-client": "cd public && cd gumdrop && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
     "start": "node server.js",
     "client": "cd public && cd gumdrop && ng serve -o",
     "dev": "concurrently -n 'server,client' -c 'red,green' \"nodemon server.js\" \"npm run client\""
