@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cd public && cd gumdrop && ng build --prod",
     "install-client": "cd public && cd gumdrop && npm install",
-    "heroku-postbuild": "npm run install-client && npm run build",
+    "heroku-postbuild": "npm install @angular/cli@latest @angular/compiler-cli && npm run install-client && npm run build",
     "start": "node server.js",
     "client": "cd public && cd gumdrop && ng serve -o",
     "dev": "concurrently -n 'server,client' -c 'red,green' \"nodemon server.js\" \"npm run client\""
