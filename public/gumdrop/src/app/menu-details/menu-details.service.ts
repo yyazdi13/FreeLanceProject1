@@ -11,6 +11,6 @@ export class MenuDetailsService {
 
   getFlavors(): Observable<any>
   {
-    return this.http.get('http://localhost:3000/api/flavors');
+    return this.http.get('/api/flavors');
   }
 }

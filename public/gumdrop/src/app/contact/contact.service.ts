@@ -13,7 +13,7 @@ export class ContactService {
 
   getMessage():Observable<any>
   {
-    return this.http.get('http://localhost:3000/api/all')
+    return this.http.get('/api/all')
   }
 
   postMessage(email: string, message: string):Observable<Contact>
