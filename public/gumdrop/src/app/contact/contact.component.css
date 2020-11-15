@@ -63,3 +63,10 @@ a, i{
     
     text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+    a, i{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

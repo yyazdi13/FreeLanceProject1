@@ -84,8 +84,14 @@ img{
 @media only screen and (max-width: 600px) {
     .flavors{
         width: inherit;
+       
     }
     .description{
         text-align: center;
+    }
+
+    .list{
+        position: absolute;
+        left: 0;
     }
 }
